@@ -1,8 +1,17 @@
 import React from 'react';
+import BookItem from './BookItem'
 
-const BookList = ({books}) => (
+const books = [
+    { id: 'id-1', name: 'JS for beginners' },
+    { id: 'id-2', name: 'React basics' },
+    { id: 'id-3', name: 'React Router overview' },
+    { id: 'id-4', name: 'Redux in depth' },
+    { id: 'id-5', name: 'Stiven King' },
+];
+
+const BookList = () => (
     <ul>
-        {books.map((book) => (<li key={book.id}>{book.name}</li>))}
+<BookItem books = {books}></BookItem>
     </ul>
 );
 
