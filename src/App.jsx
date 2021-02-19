@@ -1,24 +1,18 @@
 import React from 'react';
-import NewComponent from './components/NewComponents';
-import Header from './components/Header';
-import Form from './components/Form';
-import BookList from './components/BookList'
+
+import Navigation from './components/Navigation'
+import Content from "./components/Content"
+
+import './app.style.css'
 
 
 
-const App = () => {
-    const x = 73;
-    const sayHello = () => console.log('Hello');
-    return (
+const App = () => (
     
-        <div className='App'>
-            <Header someNumber={x} someText='Text for header' age={22} />
-            <Form sayHello={sayHello} />
-            <NewComponent>
-                <h1>Test</h1>
-            </NewComponent>
-            <BookList />
+        <div className='app'>
+            <Navigation />
+            <Content/>
+
         </div>);
-};
 
 export default App;
