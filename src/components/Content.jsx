@@ -5,6 +5,9 @@ import WorksPage from './pages/WorksPage'
 import AboutPage from './pages/AboutPage'
 import BooksPage from './pages/Books'
 import TestPage from './pages/TestPage'
+import UserDetailPage from './pages/UserDetailPage'
+
+import "./content.style.scss"
 
 const Content = () => {
     const currentPath = window.location.pathname
@@ -16,7 +19,8 @@ const Content = () => {
             {currentPath === '/works' && <WorksPage />}
             {currentPath === '/books' && <BooksPage />}
             {currentPath === '/about' && <AboutPage />}
-            {currentPath === '/test' && <TestPage/>}
+            {currentPath === '/test' && <TestPage />}
+             {currentPath === '/user-detail' && <UserDetailPage/>}
   
        </div>
     
